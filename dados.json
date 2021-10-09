@@ -1,0 +1,9 @@
+[
+    {
+      "model": "core.Category",
+      "fields": {
+        "name": "Móveis",
+        "description": "Categoria móveis"
+      }
+    }
+  ]
