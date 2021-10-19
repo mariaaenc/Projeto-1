@@ -39,6 +39,17 @@ django = ">=1.11"
 Faker = ">=0.7.7"
 
 [[package]]
+name = "djangorestframework"
+version = "3.12.4"
+description = "Web APIs for Django, made easy."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+django = ">=2.2"
+
+[[package]]
 name = "faker"
 version = "9.0.0"
 description = "Faker is a Python package that generates fake data for you."
@@ -121,7 +132,7 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "7b09845865d43eeef847b2780f0c4ce511d21c197df6ec45943f4441fa8e693e"
+content-hash = "d0778840981acb8e042d118b12031fe682160494c0494bba3c52b44e30e2883d"
 
 [metadata.files]
 asgiref = [
@@ -134,6 +145,10 @@ django = [
 ]
 django-seed = [
     {file = "django-seed-0.2.2.tar.gz", hash = "sha256:5cdda71dcd51b2e7340e4aec9035d99d7014409a4b11adddbdff17d814968221"},
+]
+djangorestframework = [
+    {file = "djangorestframework-3.12.4-py3-none-any.whl", hash = "sha256:6d1d59f623a5ad0509fe0d6bfe93cbdfe17b8116ebc8eda86d45f6e16e819aaf"},
+    {file = "djangorestframework-3.12.4.tar.gz", hash = "sha256:f747949a8ddac876e879190df194b925c177cdeb725a099db1460872f7c0a7f2"},
 ]
 faker = [
     {file = "Faker-9.0.0-py3-none-any.whl", hash = "sha256:eff29a0d71afe0c41d3f6a7d799c045e58c486d1d6621f386c2925b6cd1b6dff"},
