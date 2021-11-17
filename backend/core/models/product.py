@@ -3,7 +3,7 @@ from .category import Category
 import uuid
 
 class Product(models.Model):
-    uuid = models.UUIDField(default=uuid.uuid4, editable=False)
+    uuid = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=False)
     name = models.CharField(max_length=200)
     sku = models.IntegerField(default=0)
     value = models.FloatField(default=0)

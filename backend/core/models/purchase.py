@@ -1,6 +1,6 @@
 from django.db import models
 from .product import Product
-from django.contrib.auth.models import User
+from .user import User
 import uuid
 
 class Purchase(models.Model):
@@ -11,7 +11,7 @@ class Purchase(models.Model):
         transit = 4, 'Em trânsito'
         delivered = 5, 'Entregue'
 
-    uuid = models.UUIDField(default=uuid.uuid4, editable=False)
+    uuid = models.UUIDField(default=uuid.uuid4, primary_key=True, editable=False)
     value = models.FloatField(default=0)
     quantity = models.IntegerField(default=0)
     protocol = models.CharField(max_length=200)
